@@ -16,8 +16,11 @@ typedef enum {
 
 @interface DinnerReservation : NSObject
 
-- (void)setUser:(int)user;
-- (void)setCourse:(Course)course;
+//- (void)setUser:(int)user;
+//- (void)setCourse:(Course)course;
 - (void)setCoupon:(int)coupon;
 - (int)getCharge;
+
+- (void)addCourseWithNumber:(int)number course:(Course)course;
+
 @end

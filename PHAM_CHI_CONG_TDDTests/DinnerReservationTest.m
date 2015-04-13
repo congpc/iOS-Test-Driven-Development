@@ -11,7 +11,7 @@
 #import "DinnerReservation.h"
 #import "CouponException.h"
 /*
- Requirements:
+ Basic Specification:
  You make the component to calculate price for the party when entered number of participant and the course.
  􏰀 There three courses Matsu(7,000yen), Take(5,000yen), and Ume(3,000yen).
  􏰀 Course price times number of participants becomes the price of the party.
@@ -26,6 +26,18 @@
  - Calculate price (Ume)
  - Course constants 
  - Method for unit price
+ */
+
+/*
+ Advance 1 Specification:
+ What if multiple courses are ordered in one party? 􏰁 e.g.) 3 users for Matsu and 10 users for Take
+ 􏰀 Make it possible to set users by courses.
+ 
+ Todo list:
+ - Multiple courses
+ - Add one course
+ - Use NSMutableDictionary
+ - Add same courses
  */
 
 @interface DinnerReservationTest : XCTestCase {
@@ -48,38 +60,83 @@
     _dinnerReservation = nil;
 }
 
+#pragma mark --- Basic ---
+//- (void)testMatsu {
+//    // Calculate price(Matsu)
+//    [_dinnerReservation setUser:10];
+//    [_dinnerReservation setCourse:1];
+//    XCTAssertEqual(70000, [_dinnerReservation getCharge]);
+//}
+//
+//- (void)testTake {
+//    // Calculate price(Take)
+//    [_dinnerReservation setUser:10];
+//    [_dinnerReservation setCourse:2];
+//    XCTAssertEqual(50000, [_dinnerReservation getCharge]);
+//}
+//
+//- (void)testUme {
+//    // Calculate price (Ume)
+//    [_dinnerReservation setUser:10];
+//    [_dinnerReservation setCourse:3];
+//    XCTAssertEqual(30000, [_dinnerReservation getCharge]);
+//}
+//
+//- (void)testCoupon {
+//    // When coupons are used
+//    [_dinnerReservation setUser:10];
+//    [_dinnerReservation setCourse:Matsu];
+//    [_dinnerReservation setCoupon:1];
+//    XCTAssertEqual(60000, [_dinnerReservation getCharge]);
+//}
+//
+//- (void)testCouponException {
+//    XCTAssertThrowsSpecific([_dinnerReservation setCoupon:4], CouponException, @"3 coupons limit");
+//}
+
+
+#pragma mark --- Advance 1 ---
+- (void)testAddTwoCourse {
+    [_dinnerReservation addCourseWithNumber:3 course:Matsu];
+    [_dinnerReservation addCourseWithNumber:10 course:Take];
+    XCTAssertEqual(71000, [_dinnerReservation getCharge]);
+    
+}
+
+- (void)testAddOneCourse {
+    [_dinnerReservation addCourseWithNumber:10 course:Matsu];
+    XCTAssertEqual(70000, [_dinnerReservation getCharge]);
+}
+
 - (void)testMatsu {
     // Calculate price(Matsu)
-    [_dinnerReservation setUser:10];
-    [_dinnerReservation setCourse:1];
+    [_dinnerReservation addCourseWithNumber:10 course:Matsu];
     XCTAssertEqual(70000, [_dinnerReservation getCharge]);
 }
 
 - (void)testTake {
     // Calculate price(Take)
-    [_dinnerReservation setUser:10];
-    [_dinnerReservation setCourse:2];
+    [_dinnerReservation addCourseWithNumber:10 course:Take];
     XCTAssertEqual(50000, [_dinnerReservation getCharge]);
 }
 
 - (void)testUme {
     // Calculate price (Ume)
-    [_dinnerReservation setUser:10];
-    [_dinnerReservation setCourse:3];
+    [_dinnerReservation addCourseWithNumber:10 course:Ume];
     XCTAssertEqual(30000, [_dinnerReservation getCharge]);
 }
 
 - (void)testCoupon {
     // When coupons are used
-    [_dinnerReservation setUser:10];
-    [_dinnerReservation setCourse:Matsu];
+    [_dinnerReservation addCourseWithNumber:10 course:Matsu];
     [_dinnerReservation setCoupon:1];
     XCTAssertEqual(60000, [_dinnerReservation getCharge]);
 }
 
-
-- (void)testCouponException {
-    XCTAssertThrowsSpecific([_dinnerReservation setCoupon:4], CouponException, @"");
+- (void)testAddSameCourses {
+    [_dinnerReservation addCourseWithNumber:2 course:Matsu];
+    [_dinnerReservation addCourseWithNumber:3 course:Matsu];
+    XCTAssertEqual(21000, [_dinnerReservation getCharge]);
 }
 
 - (void)testPerformanceExample {
