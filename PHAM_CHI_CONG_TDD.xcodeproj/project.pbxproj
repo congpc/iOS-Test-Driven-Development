@@ -13,7 +13,11 @@
 		C5BC0F901ADBA6C1001B9D3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5BC0F8E1ADBA6C1001B9D3A /* Main.storyboard */; };
 		C5BC0F921ADBA6C1001B9D3A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5BC0F911ADBA6C1001B9D3A /* Images.xcassets */; };
 		C5BC0F951ADBA6C1001B9D3A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5BC0F931ADBA6C1001B9D3A /* LaunchScreen.xib */; };
-		C5BC0FA11ADBA6C2001B9D3A /* PHAM_CHI_CONG_TDDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC0FA01ADBA6C2001B9D3A /* PHAM_CHI_CONG_TDDTests.m */; };
+		C5BC0FAB1ADBA717001B9D3A /* CalcTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC0FAA1ADBA717001B9D3A /* CalcTest.m */; };
+		C5BC0FAE1ADBA770001B9D3A /* Calc.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC0FAD1ADBA770001B9D3A /* Calc.m */; };
+		C5BC0FB01ADBADD5001B9D3A /* DinnerReservationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC0FAF1ADBADD5001B9D3A /* DinnerReservationTest.m */; };
+		C5BC0FB31ADBADFC001B9D3A /* DinnerReservation.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC0FB21ADBADFC001B9D3A /* DinnerReservation.m */; };
+		C5BC0FB61ADBB88D001B9D3A /* CouponException.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC0FB51ADBB88D001B9D3A /* CouponException.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +43,14 @@
 		C5BC0F941ADBA6C1001B9D3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C5BC0F9A1ADBA6C1001B9D3A /* PHAM_CHI_CONG_TDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PHAM_CHI_CONG_TDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5BC0F9F1ADBA6C1001B9D3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C5BC0FA01ADBA6C2001B9D3A /* PHAM_CHI_CONG_TDDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHAM_CHI_CONG_TDDTests.m; sourceTree = "<group>"; };
+		C5BC0FAA1ADBA717001B9D3A /* CalcTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalcTest.m; sourceTree = "<group>"; };
+		C5BC0FAC1ADBA770001B9D3A /* Calc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calc.h; sourceTree = "<group>"; };
+		C5BC0FAD1ADBA770001B9D3A /* Calc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calc.m; sourceTree = "<group>"; };
+		C5BC0FAF1ADBADD5001B9D3A /* DinnerReservationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DinnerReservationTest.m; sourceTree = "<group>"; };
+		C5BC0FB11ADBADFC001B9D3A /* DinnerReservation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DinnerReservation.h; sourceTree = "<group>"; };
+		C5BC0FB21ADBADFC001B9D3A /* DinnerReservation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DinnerReservation.m; sourceTree = "<group>"; };
+		C5BC0FB41ADBB88D001B9D3A /* CouponException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouponException.h; sourceTree = "<group>"; };
+		C5BC0FB51ADBB88D001B9D3A /* CouponException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouponException.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +100,12 @@
 				C5BC0F911ADBA6C1001B9D3A /* Images.xcassets */,
 				C5BC0F931ADBA6C1001B9D3A /* LaunchScreen.xib */,
 				C5BC0F841ADBA6C1001B9D3A /* Supporting Files */,
+				C5BC0FAC1ADBA770001B9D3A /* Calc.h */,
+				C5BC0FAD1ADBA770001B9D3A /* Calc.m */,
+				C5BC0FB11ADBADFC001B9D3A /* DinnerReservation.h */,
+				C5BC0FB21ADBADFC001B9D3A /* DinnerReservation.m */,
+				C5BC0FB41ADBB88D001B9D3A /* CouponException.h */,
+				C5BC0FB51ADBB88D001B9D3A /* CouponException.m */,
 			);
 			path = PHAM_CHI_CONG_TDD;
 			sourceTree = "<group>";
@@ -105,8 +122,9 @@
 		C5BC0F9D1ADBA6C1001B9D3A /* PHAM_CHI_CONG_TDDTests */ = {
 			isa = PBXGroup;
 			children = (
-				C5BC0FA01ADBA6C2001B9D3A /* PHAM_CHI_CONG_TDDTests.m */,
 				C5BC0F9E1ADBA6C1001B9D3A /* Supporting Files */,
+				C5BC0FAA1ADBA717001B9D3A /* CalcTest.m */,
+				C5BC0FAF1ADBADD5001B9D3A /* DinnerReservationTest.m */,
 			);
 			path = PHAM_CHI_CONG_TDDTests;
 			sourceTree = "<group>";
@@ -219,9 +237,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5BC0FAE1ADBA770001B9D3A /* Calc.m in Sources */,
 				C5BC0F8D1ADBA6C1001B9D3A /* ViewController.m in Sources */,
 				C5BC0F8A1ADBA6C1001B9D3A /* AppDelegate.m in Sources */,
 				C5BC0F871ADBA6C1001B9D3A /* main.m in Sources */,
+				C5BC0FB31ADBADFC001B9D3A /* DinnerReservation.m in Sources */,
+				C5BC0FB61ADBB88D001B9D3A /* CouponException.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +250,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5BC0FA11ADBA6C2001B9D3A /* PHAM_CHI_CONG_TDDTests.m in Sources */,
+				C5BC0FB01ADBADD5001B9D3A /* DinnerReservationTest.m in Sources */,
+				C5BC0FAB1ADBA717001B9D3A /* CalcTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
