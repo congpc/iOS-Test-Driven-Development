@@ -18,6 +18,7 @@
 		C5BC0FB01ADBADD5001B9D3A /* DinnerReservationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC0FAF1ADBADD5001B9D3A /* DinnerReservationTest.m */; };
 		C5BC0FB31ADBADFC001B9D3A /* DinnerReservation.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC0FB21ADBADFC001B9D3A /* DinnerReservation.m */; };
 		C5BC0FB61ADBB88D001B9D3A /* CouponException.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC0FB51ADBB88D001B9D3A /* CouponException.m */; };
+		C5BC0FB91ADBCE24001B9D3A /* CourseOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC0FB81ADBCE24001B9D3A /* CourseOrder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		C5BC0FB21ADBADFC001B9D3A /* DinnerReservation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DinnerReservation.m; sourceTree = "<group>"; };
 		C5BC0FB41ADBB88D001B9D3A /* CouponException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouponException.h; sourceTree = "<group>"; };
 		C5BC0FB51ADBB88D001B9D3A /* CouponException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouponException.m; sourceTree = "<group>"; };
+		C5BC0FB71ADBCE24001B9D3A /* CourseOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseOrder.h; sourceTree = "<group>"; };
+		C5BC0FB81ADBCE24001B9D3A /* CourseOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseOrder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 				C5BC0FB21ADBADFC001B9D3A /* DinnerReservation.m */,
 				C5BC0FB41ADBB88D001B9D3A /* CouponException.h */,
 				C5BC0FB51ADBB88D001B9D3A /* CouponException.m */,
+				C5BC0FB71ADBCE24001B9D3A /* CourseOrder.h */,
+				C5BC0FB81ADBCE24001B9D3A /* CourseOrder.m */,
 			);
 			path = PHAM_CHI_CONG_TDD;
 			sourceTree = "<group>";
@@ -241,6 +246,7 @@
 				C5BC0F8D1ADBA6C1001B9D3A /* ViewController.m in Sources */,
 				C5BC0F8A1ADBA6C1001B9D3A /* AppDelegate.m in Sources */,
 				C5BC0F871ADBA6C1001B9D3A /* main.m in Sources */,
+				C5BC0FB91ADBCE24001B9D3A /* CourseOrder.m in Sources */,
 				C5BC0FB31ADBADFC001B9D3A /* DinnerReservation.m in Sources */,
 				C5BC0FB61ADBB88D001B9D3A /* CouponException.m in Sources */,
 			);

@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class CourseOrder;
+
 typedef enum {
     Matsu = 1,
     Take = 2,
@@ -21,6 +23,8 @@ typedef enum {
 - (void)setCoupon:(int)coupon;
 - (int)getCharge;
 
-- (void)addCourseWithNumber:(int)number course:(Course)course;
+//- (void)addCourseWithUser:(int)user course:(Course)course;
+
+- (void)addCourseOrder:(CourseOrder*)courseOrder;
 
 @end

@@ -8,6 +8,7 @@
 
 #import "DinnerReservation.h"
 #import "CouponException.h"
+#import "CourseOrder.h"
 
 //Private
 @interface DinnerReservation() {
@@ -71,20 +72,35 @@
 
 #pragma mark --- Advance 1 ---
 //For Advance 1 TDD
-- (void)addCourseWithNumber:(int)number course:(Course)course {
-    [_courseTable addEntriesFromDictionary:@{@(course):@(number)}]; // key by NSNumber: value by NSNumber
-}
+//- (void)addCourseWithUser:(int)user course:(Course)course {
+//    [_courseTable addEntriesFromDictionary:@{@(course):@(user)}]; // key by NSNumber: value by NSNumber
+//}
 
+//- (int)getCharge {
+//    int charge = 0;
+//    for (NSNumber *key in _courseTable) {
+//        Course course = (Course)[key intValue];
+//        int price = [self _getPrice:course];
+//        int number = [(_courseTable[key]) intValue];
+//        charge += price * number;
+//        
+//    }
+//    return charge - 10000 * _coupon;
+//}
+
+#pragma mark --- Advance 2 ---
+- (void)addCourseOrder:(CourseOrder*)courseOrder {
+//    [_courseTable addEntriesFromDictionary:@{@(courseOrder.course):@(courseOrder.user)}];
+    [_courseTable addEntriesFromDictionary:@{@(courseOrder.course):courseOrder}]; // key by NSNumber: value by CourseOrder
+}
 - (int)getCharge {
     int charge = 0;
-    for (NSNumber *key in _courseTable) {
-        Course course = (Course)[key intValue];
-        int price = [self _getPrice:course];
-        int number = [(_courseTable[key]) intValue];
-        charge += price * number;
-        
+    for (NSString *key in _courseTable) {
+        CourseOrder *order = (CourseOrder*)[_courseTable objectForKey:key];
+        charge += order.getOrderCharge;
     }
     return charge - 10000 * _coupon;
 }
+
 
 @end
