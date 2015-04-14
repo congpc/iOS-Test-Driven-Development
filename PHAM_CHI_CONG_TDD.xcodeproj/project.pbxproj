@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5AF40031ADCCD19009C6B5C /* Triangle.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AF40021ADCCD19009C6B5C /* Triangle.m */; };
+		C5AF40051ADCCD2C009C6B5C /* TriangleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AF40041ADCCD2C009C6B5C /* TriangleTest.m */; };
+		C5AF40081ADCD327009C6B5C /* TriangleException.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AF40071ADCD327009C6B5C /* TriangleException.m */; };
 		C5BC0F871ADBA6C1001B9D3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC0F861ADBA6C1001B9D3A /* main.m */; };
 		C5BC0F8A1ADBA6C1001B9D3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC0F891ADBA6C1001B9D3A /* AppDelegate.m */; };
 		C5BC0F8D1ADBA6C1001B9D3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC0F8C1ADBA6C1001B9D3A /* ViewController.m */; };
@@ -32,6 +35,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C5AF40011ADCCD19009C6B5C /* Triangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Triangle.h; sourceTree = "<group>"; };
+		C5AF40021ADCCD19009C6B5C /* Triangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Triangle.m; sourceTree = "<group>"; };
+		C5AF40041ADCCD2C009C6B5C /* TriangleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleTest.m; sourceTree = "<group>"; };
+		C5AF40061ADCD327009C6B5C /* TriangleException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleException.h; sourceTree = "<group>"; };
+		C5AF40071ADCD327009C6B5C /* TriangleException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleException.m; sourceTree = "<group>"; };
 		C5BC0F811ADBA6C1001B9D3A /* PHAM_CHI_CONG_TDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PHAM_CHI_CONG_TDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5BC0F851ADBA6C1001B9D3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5BC0F861ADBA6C1001B9D3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -74,6 +82,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C5AF40001ADCCCE3009C6B5C /* File1 */ = {
+			isa = PBXGroup;
+			children = (
+				C5BC0FAC1ADBA770001B9D3A /* Calc.h */,
+				C5BC0FAD1ADBA770001B9D3A /* Calc.m */,
+				C5BC0FB11ADBADFC001B9D3A /* DinnerReservation.h */,
+				C5BC0FB21ADBADFC001B9D3A /* DinnerReservation.m */,
+				C5BC0FB41ADBB88D001B9D3A /* CouponException.h */,
+				C5BC0FB51ADBB88D001B9D3A /* CouponException.m */,
+				C5BC0FB71ADBCE24001B9D3A /* CourseOrder.h */,
+				C5BC0FB81ADBCE24001B9D3A /* CourseOrder.m */,
+			);
+			name = File1;
+			sourceTree = "<group>";
+		};
 		C5BC0F781ADBA6C1001B9D3A = {
 			isa = PBXGroup;
 			children = (
@@ -103,14 +126,11 @@
 				C5BC0F911ADBA6C1001B9D3A /* Images.xcassets */,
 				C5BC0F931ADBA6C1001B9D3A /* LaunchScreen.xib */,
 				C5BC0F841ADBA6C1001B9D3A /* Supporting Files */,
-				C5BC0FAC1ADBA770001B9D3A /* Calc.h */,
-				C5BC0FAD1ADBA770001B9D3A /* Calc.m */,
-				C5BC0FB11ADBADFC001B9D3A /* DinnerReservation.h */,
-				C5BC0FB21ADBADFC001B9D3A /* DinnerReservation.m */,
-				C5BC0FB41ADBB88D001B9D3A /* CouponException.h */,
-				C5BC0FB51ADBB88D001B9D3A /* CouponException.m */,
-				C5BC0FB71ADBCE24001B9D3A /* CourseOrder.h */,
-				C5BC0FB81ADBCE24001B9D3A /* CourseOrder.m */,
+				C5AF40001ADCCCE3009C6B5C /* File1 */,
+				C5AF40011ADCCD19009C6B5C /* Triangle.h */,
+				C5AF40021ADCCD19009C6B5C /* Triangle.m */,
+				C5AF40061ADCD327009C6B5C /* TriangleException.h */,
+				C5AF40071ADCD327009C6B5C /* TriangleException.m */,
 			);
 			path = PHAM_CHI_CONG_TDD;
 			sourceTree = "<group>";
@@ -130,6 +150,7 @@
 				C5BC0F9E1ADBA6C1001B9D3A /* Supporting Files */,
 				C5BC0FAA1ADBA717001B9D3A /* CalcTest.m */,
 				C5BC0FAF1ADBADD5001B9D3A /* DinnerReservationTest.m */,
+				C5AF40041ADCCD2C009C6B5C /* TriangleTest.m */,
 			);
 			path = PHAM_CHI_CONG_TDDTests;
 			sourceTree = "<group>";
@@ -243,8 +264,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5BC0FAE1ADBA770001B9D3A /* Calc.m in Sources */,
+				C5AF40081ADCD327009C6B5C /* TriangleException.m in Sources */,
 				C5BC0F8D1ADBA6C1001B9D3A /* ViewController.m in Sources */,
 				C5BC0F8A1ADBA6C1001B9D3A /* AppDelegate.m in Sources */,
+				C5AF40031ADCCD19009C6B5C /* Triangle.m in Sources */,
 				C5BC0F871ADBA6C1001B9D3A /* main.m in Sources */,
 				C5BC0FB91ADBCE24001B9D3A /* CourseOrder.m in Sources */,
 				C5BC0FB31ADBADFC001B9D3A /* DinnerReservation.m in Sources */,
@@ -256,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5AF40051ADCCD2C009C6B5C /* TriangleTest.m in Sources */,
 				C5BC0FB01ADBADD5001B9D3A /* DinnerReservationTest.m in Sources */,
 				C5BC0FAB1ADBA717001B9D3A /* CalcTest.m in Sources */,
 			);
@@ -440,6 +464,7 @@
 				C5BC0FA61ADBA6C2001B9D3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5BC0FA71ADBA6C2001B9D3A /* Build configuration list for PBXNativeTarget "PHAM_CHI_CONG_TDDTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +473,7 @@
 				C5BC0FA91ADBA6C2001B9D3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

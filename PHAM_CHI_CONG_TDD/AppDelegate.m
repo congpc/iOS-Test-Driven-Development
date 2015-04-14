@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Triangle.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    @try {
+        Triangle *triangle = [[Triangle alloc] init];
+        [triangle calculateTriangleWithSlide1:0 slide2:0 slide3:0];
+    }
+    @catch (NSException *exception) {
+        NSLog(@"Error name:[%@] - message:[%@]",exception.name,exception.description);
+    }
+    @finally {
+        NSLog(@"Finally");
+    }
+    
     return YES;
 }
 
