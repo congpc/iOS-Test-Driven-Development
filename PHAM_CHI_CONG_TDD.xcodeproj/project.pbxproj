@@ -13,6 +13,9 @@
 		C5AF400C1ADCEB16009C6B5C /* SortReservation.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AF400B1ADCEB16009C6B5C /* SortReservation.m */; };
 		C5AF400F1ADCEBD3009C6B5C /* SortReservationList.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AF400E1ADCEBD3009C6B5C /* SortReservationList.m */; };
 		C5AF40111ADCF014009C6B5C /* SortReservationListTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AF40101ADCF014009C6B5C /* SortReservationListTest.m */; };
+		C5AF40141ADCF871009C6B5C /* ShopService.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AF40131ADCF871009C6B5C /* ShopService.m */; };
+		C5AF40161ADCF880009C6B5C /* ShopServiceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AF40151ADCF880009C6B5C /* ShopServiceTest.m */; };
+		C5AF40231ADCFF8F009C6B5C /* NotNullAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AF40221ADCFF8F009C6B5C /* NotNullAuthenticator.m */; };
 		C5BC0F871ADBA6C1001B9D3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC0F861ADBA6C1001B9D3A /* main.m */; };
 		C5BC0F8A1ADBA6C1001B9D3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC0F891ADBA6C1001B9D3A /* AppDelegate.m */; };
 		C5BC0F8D1ADBA6C1001B9D3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC0F8C1ADBA6C1001B9D3A /* ViewController.m */; };
@@ -48,6 +51,12 @@
 		C5AF400D1ADCEBD3009C6B5C /* SortReservationList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortReservationList.h; sourceTree = "<group>"; };
 		C5AF400E1ADCEBD3009C6B5C /* SortReservationList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortReservationList.m; sourceTree = "<group>"; };
 		C5AF40101ADCF014009C6B5C /* SortReservationListTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortReservationListTest.m; sourceTree = "<group>"; };
+		C5AF40121ADCF871009C6B5C /* ShopService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopService.h; sourceTree = "<group>"; };
+		C5AF40131ADCF871009C6B5C /* ShopService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopService.m; sourceTree = "<group>"; };
+		C5AF40151ADCF880009C6B5C /* ShopServiceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopServiceTest.m; sourceTree = "<group>"; };
+		C5AF40201ADCFE84009C6B5C /* Authenticator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Authenticator.h; sourceTree = "<group>"; };
+		C5AF40211ADCFF8F009C6B5C /* NotNullAuthenticator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotNullAuthenticator.h; sourceTree = "<group>"; };
+		C5AF40221ADCFF8F009C6B5C /* NotNullAuthenticator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotNullAuthenticator.m; sourceTree = "<group>"; };
 		C5BC0F811ADBA6C1001B9D3A /* PHAM_CHI_CONG_TDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PHAM_CHI_CONG_TDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5BC0F851ADBA6C1001B9D3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5BC0F861ADBA6C1001B9D3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -116,6 +125,11 @@
 				C5AF400B1ADCEB16009C6B5C /* SortReservation.m */,
 				C5AF400D1ADCEBD3009C6B5C /* SortReservationList.h */,
 				C5AF400E1ADCEBD3009C6B5C /* SortReservationList.m */,
+				C5AF40121ADCF871009C6B5C /* ShopService.h */,
+				C5AF40131ADCF871009C6B5C /* ShopService.m */,
+				C5AF40201ADCFE84009C6B5C /* Authenticator.h */,
+				C5AF40211ADCFF8F009C6B5C /* NotNullAuthenticator.h */,
+				C5AF40221ADCFF8F009C6B5C /* NotNullAuthenticator.m */,
 			);
 			name = File2;
 			sourceTree = "<group>";
@@ -172,6 +186,7 @@
 				C5BC0FAF1ADBADD5001B9D3A /* DinnerReservationTest.m */,
 				C5AF40041ADCCD2C009C6B5C /* TriangleTest.m */,
 				C5AF40101ADCF014009C6B5C /* SortReservationListTest.m */,
+				C5AF40151ADCF880009C6B5C /* ShopServiceTest.m */,
 			);
 			path = PHAM_CHI_CONG_TDDTests;
 			sourceTree = "<group>";
@@ -286,7 +301,9 @@
 			files = (
 				C5AF400F1ADCEBD3009C6B5C /* SortReservationList.m in Sources */,
 				C5BC0FAE1ADBA770001B9D3A /* Calc.m in Sources */,
+				C5AF40231ADCFF8F009C6B5C /* NotNullAuthenticator.m in Sources */,
 				C5AF40081ADCD327009C6B5C /* TriangleException.m in Sources */,
+				C5AF40141ADCF871009C6B5C /* ShopService.m in Sources */,
 				C5BC0F8D1ADBA6C1001B9D3A /* ViewController.m in Sources */,
 				C5BC0F8A1ADBA6C1001B9D3A /* AppDelegate.m in Sources */,
 				C5AF40031ADCCD19009C6B5C /* Triangle.m in Sources */,
@@ -306,6 +323,7 @@
 				C5BC0FB01ADBADD5001B9D3A /* DinnerReservationTest.m in Sources */,
 				C5AF40111ADCF014009C6B5C /* SortReservationListTest.m in Sources */,
 				C5BC0FAB1ADBA717001B9D3A /* CalcTest.m in Sources */,
+				C5AF40161ADCF880009C6B5C /* ShopServiceTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
